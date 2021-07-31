@@ -12,7 +12,7 @@
         android:layout_height="64dp"
         android:layout_marginStart="171dp"
         android:layout_marginLeft="171dp"
-        android:layout_marginTop="208dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="171dp"
         android:layout_marginRight="171dp"
         android:background="@android:color/holo_blue_dark"
@@ -36,7 +36,7 @@
         android:layout_height="64dp"
         android:layout_marginStart="171dp"
         android:layout_marginLeft="171dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="171dp"
         android:layout_marginRight="171dp"
         android:background="@android:color/holo_blue_dark"
@@ -58,7 +58,7 @@
         android:id="@+id/editTextTextPersonName3"
         android:layout_width="235dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="260dp"
+        android:layout_marginBottom="416dp"
         android:background="@android:color/holo_blue_dark"
         android:ems="10"
         android:hint="faltas"
@@ -72,7 +72,35 @@
         android:textColorHint="@color/teal_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:padding="15dp"
+        android:text="@string/Processar"
+        android:textColorHighlight="@color/teal_200"
+        app:backgroundTint="@color/design_default_color_secondary_variant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
