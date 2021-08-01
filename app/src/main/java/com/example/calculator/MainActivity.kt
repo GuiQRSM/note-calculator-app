@@ -1,5 +1,6 @@
 package com.example.calculator
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -23,8 +24,10 @@ class MainActivity : AppCompatActivity() {
 
             if(media >= 6 && falta <= 10) {
                 resposta.setText("Situação final: APROVADO" + "\n" + "Valor da média:" + media + "\n" + "Total de faltas:" + falta)
+                resposta.setTextColor(Color.GREEN)
             }else{
                 resposta.setText("Situação final: REPROVADO" + "\n" + "Valor da média:" + media + "\n" + "Total de faltas:" + falta)
+                resposta.setTextColor(Color.RED)
             }
         }
     }
