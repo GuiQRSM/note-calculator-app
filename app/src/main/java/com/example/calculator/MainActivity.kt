@@ -22,9 +22,9 @@ class MainActivity : AppCompatActivity() {
             val falta: Int = Integer.parseInt(faltas.text.toString())
 
             if(media >= 6 && falta <= 10) {
-                resposta.setText("Situação final: APROVADO" + "\n" + "Valor da média:" + media + "\n" + "Total de faltas:" + faltas)
+                resposta.setText("Situação final: APROVADO" + "\n" + "Valor da média:" + media + "\n" + "Total de faltas:" + falta)
             }else{
-                resposta.setText("Situação final: REPROVADO" + "\n" + "Valor da média:" + media + "\n" + "Total de faltas:" + faltas)
+                resposta.setText("Situação final: REPROVADO" + "\n" + "Valor da média:" + media + "\n" + "Total de faltas:" + falta)
             }
         }
     }
